@@ -43,9 +43,14 @@ const Home = () => {
               Actualmente curso el noveno semestre en la Universidad de Pamplona. Enfoque en desarrollo web y bases de datos. Habilidad para resolver desafíos. Aspiro a formar parte de su empresa y contribuir con proyectos innovadores que superen las expectativas de los clientes.
           </motion.p>
           {/* boton */}
-          <div className="flex justify-center xl:hidden relative">
+          <motion.div
+            variants={fadeIn('down', 0.4)}
+            initial='hidden'
+            animate='show'
+            exit='hidden'
+            className="flex justify-center xl:hidden relative">
             <ProjectsBtn/>
-          </div>
+          </motion.div>
           <motion.div 
             variants={fadeIn('down', 0.4)}
             initial='hidden'
