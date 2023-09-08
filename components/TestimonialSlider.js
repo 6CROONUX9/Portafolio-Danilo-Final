@@ -14,14 +14,14 @@ const testimonialSlider = [
     name: "Brayan Munoz",
     position: "Profesor - Academlo",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque",
+      "En relación al ecommerce que Danilo creó para mí, quiero expresar que estoy muy satisfecho con el resultado. Fue un trabajo excepcional, realizado con gran profesionalidad y atención a los detalles. Estoy realmente impresionado por la calidad y la altura a la que llevó este proyecto.",
   },
   {
     image: "/t-avt-3D.png",
-    name: "Danilo Florez",
-    position: "Autor",
+    name: "Alejandro Taboada",
+    position: "programacion ATS",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque",
+      "Si puedes imaginarlo, puedes Progrmarlo.",
   },
 ];
 

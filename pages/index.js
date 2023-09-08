@@ -12,6 +12,10 @@ import {motion} from 'framer-motion'
 // Variantes
 import {fadeIn} from '../variants'
 
+// Iconos
+import { BsArrowRight } from "react-icons/bs";
+import { RiDownload2Line,RiFileDownloadFill } from "react-icons/ri";
+
 const Home = () => {
   return (
     <div className="bg-primary/60 h-full">
@@ -70,6 +74,24 @@ const Home = () => {
         >
           <Avatar/>
         </motion.div>
+      </div>
+      {/* btn descargar */}
+      <div className="absolute   sm:bottom-28 sm:right-10  xl:bottom-10 xl:right-20 z-50">
+      <motion.button
+              variants={fadeIn('up', 0.6)}
+              initial='hidden'
+              animate='show'
+              exit='hidden'
+              className='btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group'
+              type='submit'
+              value='download'
+              href='/pdf/HOJA_VIDA_JDFP.pdf'
+              download='HojaVidaDanilo.pdf' 
+            >
+              <span   className='group-hover:-translate-y-[120%] group-hover:opacity-0  transition-all duration-500 mr-2'>Descargar CV </span>
+              <a href='/pdf/HOJA_VIDA_JDFP.pdf' download='HojaVidaDanilo.pdf'  className='-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px] hover:scale-150'><RiFileDownloadFill/></a>
+                            {/* <BsArrowRight className='-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]'/> */}
+            </motion.button>
       </div>
     </div>
   );
